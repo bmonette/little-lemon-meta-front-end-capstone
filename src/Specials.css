@@ -1,0 +1,53 @@
+.specials {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.specials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #495e57;
+}
+
+.specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.special-card {
+    background-color: #EDEFEE;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+  .special-card:hover {
+    transform: translateY(-5px);
+}
+
+  .special-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+  .special-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+  .special-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
