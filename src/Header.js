@@ -1,9 +1,9 @@
-import React from 'react';
+import './Header.css';
 
 function Header() {
   return (
     <header>
-      <h1>Welcome to My Website</h1>
+      <h1 className="visually-hidden">Little Lemon Restaurant</h1>
     </header>
   );
 }
