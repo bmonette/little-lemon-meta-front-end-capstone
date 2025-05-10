@@ -1,0 +1,66 @@
+.menu-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px 0 20px 0;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: #EDEFEE;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-card h2 {
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+.menu-card p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.menu-card .price {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .menu-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
+}
+  
+@media (max-width: 500px) {
+    .menu-grid {
+      grid-template-columns: 1fr; /* 1 per row on phones */
+    }
+}
